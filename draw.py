@@ -25,8 +25,6 @@ def drawStockTrend(name, start, imageName):
     data = data[start:now]
     # 创建画布
     plt.figure(figsize=(20, 8), dpi=100)
-    # fig = plt.gcf()
-    # fig.set_size_inches(18.5,10.5)
     plt.title(name)
     plt.xticks(rotation=30)
     plt.plot(data.index, data['open'], label='open', marker='o', linestyle=':', linewidth=1, markersize=3, color='gray')
